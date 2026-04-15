@@ -1,0 +1,21 @@
+
+@media (max-width: 768px) {
+    .team, .news {
+        grid-template-columns: 1fr !important; /* Chuyển về 1 cột dọc */
+    }
+    .cart {
+        flex-direction: column !important; /* Giỏ hàng và Thanh toán xếp chồng lên nhau */
+    }
+    .item, .bill {
+        width: 100% !important; /* Chiếm hết chiều ngang điện thoại */
+        border-radius: 10px !important;
+    }
+    .header {
+        flex-direction: column; /* Header xếp dọc để không bị tràn */
+        gap: 10px;
+    }
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

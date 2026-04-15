@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="24630641" content="Luong Ngo Gia An" />
+    <title>Thời trang dành cho bé trai - Pami Store</title>
+    
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../JS/bootstrap.bundle.js"></script>
+
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5efeb !important; 
+    font-family: "Times New Roman", Times, serif;
+}
+.container {
+    margin: 0 auto;
+}
+        .header-custom {
+            background-color: white;
+            border-radius: 50px;
+            border-bottom: 3px solid #567c8d;
+            padding: 10px 30px;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        }
+        .menu a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            background-color: #567c8d;
+            padding: 8px 18px;
+            border-radius: 20px;
+            transition: 0.3s;
+            font-size: 13px;
+            display: inline-block;
+        }
+        .menu a:hover { background-color: #2f4156; color: #fff; }
+
+        .main-layout { display: flex; gap: 30px; margin-top: 30px; }
+        .sidebar {
+            flex: 0 0 280px;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            height: fit-content;
+            position: sticky;
+            top: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .filter-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #2f4156;
+            border-left: 4px solid #567c8d;
+            padding-left: 10px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        .filter-group {
+            margin-bottom: 25px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+        .filter-group:last-child { border: none; }
+        .form-check { margin-bottom: 8px; display: flex; align-items: center; font-size: 15px; color: #666; cursor: pointer; }
+        .form-check input { margin-right: 10px; }
+
+        .product-content { flex: 1; }
+        .section-title {
+            color: #2f4156;
+            border-left: 6px solid #567c8d;
+            padding-left: 15px;
+            font-weight: bold;
+            margin-bottom: 25px;
+            font-size: 24px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #ddd;
+        }
+        .card img { width: 100%; height: 280px; object-fit: cover; padding: 10px; }
+        .card-body { padding: 15px; display: flex; flex-direction: column; flex-grow: 1; }
+        .card-text-muted { font-size: 13px; color: #888; margin-bottom: 5px; }
+        .card-title { font-size: 16px; font-weight: bold; margin-bottom: 8px; height: 40px; overflow: hidden; }
+        .price { color: #d9534f; font-weight: bold; font-size: 17px; margin-top: auto; }
+        .btn-cart {
+            background-color: #567c8d;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 10px;
+            font-weight: bold;
+            width: 100%;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+        .btn-cart:hover { background-color: #2f4156; }
+
+        .footer {
+        background-color: #2f4156;
+        color: white;
+        margin-top: 50px;
+        width: 100%;
+        padding: 60px 0 30px;
+      }
+      .footer h2 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #fff;
+        border-bottom: 2px solid #567c8d;
+        display: inline-block;
+        padding-bottom: 5px;
+      }
+      .footer ul {
+        list-style: none;
+        padding: 0;
+      }
+      .footer a {
+        color: #cbd5e0;
+        text-decoration: none;
+        font-size: 14px;
+        transition: 0.3s;
+      }
+      .footer a:hover {
+        color: #ff9ff3;
+        text-decoration: underline;
+      }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header class="header-custom d-flex justify-content-between align-items-center py-2 px-3">
+        <div class="d-flex align-items-center">
+            <img src="../IMG/logo.jpg" alt="Logo" style="width: 70px; border-radius: 50%" onerror="this.src='https://placehold.co/70x70'">
+            <p class="m-0 ms-2 fw-bold d-none d-lg-block" style="color: #2e5a6e; white-space: nowrap">
+                | Thời trang trẻ em hiện đại
+            </p>
+        </div>
+
+        <div class="menu d-flex align-items-center gap-3">
+            <a href="../index.html">Home</a>
+            <a href="./product-trai.html">Bé trai</a>
+            <a href="./product-gai.html">Bé gái</a>
+            <a href="./product-sale.html">SALE</a>
+        </div>
+
+        <div class="d-flex align-items-center gap-3">
+            <div class="search d-flex">
+                <input type="text" class="form-control" style="border-radius: 30px; font-size: 14px;" placeholder="Bạn muốn tìm gì ?" />
+                <button class="btn btn-outline-secondary ms-1" style="border-radius: 30px; font-size: 14px;">Go</button>
+            </div>
+            <a href="./cart.html"><img src="../IMG/online-shopping.png" alt="gio" style="width: 25px"></a>
+            <a href="./login.html"><img src="../IMG/user.png" alt="user" style="width: 30px; height: 30px; border-radius: 50%;"></a>
+        </div>
+    </header>
+
+    
+        <div class="main-layout">
+            <aside class="sidebar">
+                <div class="filter-group">
+                    <h3 class="filter-title">DANH MỤC</h3>
+                    <label class="form-check"><input type="checkbox"> Áo thun</label>
+                    <label class="form-check"><input type="checkbox"> Quần short</label>
+                    <label class="form-check"><input type="checkbox"> Quần Jean</label>
+                    <label class="form-check"><input type="checkbox"> Áo khoác</label>
+                </div>
+
+                <div class="filter-group">
+                    <h3 class="filter-title">ĐỘ TUỔI</h3>
+                    <label class="form-check"><input type="checkbox"> 1 - 4 tuổi</label>
+                    <label class="form-check"><input type="checkbox"> 5 - 12 tuổi</label>
+                    <label class="form-check"><input type="checkbox"> 8 - 16 tuổi</label>
+                </div>
+
+                <div class="filter-group">
+                    <h3 class="filter-title">KHOẢNG GIÁ</h3>
+                    <label class="form-check"><input type="radio" name="price"> Dưới 200.000đ</label>
+                    <label class="form-check"><input type="radio" name="price"> 200.000đ - 500.000đ</label>
+                </div>
+                
+                <button class="btn-cart" style="background: #2f4156; border-radius: 5px;">ÁP DỤNG LỌC</button>
+            </aside>
+
+            <main class="product-content">
+                <h2 class="section-title">SẢN PHẨM BÉ TRAI</h2>
+                
+                <div class="product-grid">
+                    <div class="card">
+                        <img src="../IMG/UT Pokémon Áo Thun.png" alt="SP" >
+                        <div class="card-body">
+                            <p class="card-text-muted">5-12 tuổi | 100% Bông</p>
+                            <h5 class="card-title">Áo Thun Pokémon</h5>
+                            <div style="color: #ffc107; font-size: 14px; margin-bottom: 5px;">★★★★★ (276)</div>
+                            <p class="price">195.000đ</p>
+                            <button class="btn-cart">THÊM GIỎ HÀNG</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../IMG/aophaobetrai.webp" alt="SP">
+                        <div class="card-body">
+                            <p class="card-text-muted">5-12 tuổi | 100% Bông</p>
+                            <h5 class="card-title">Áo Phao Siêu Ấm</h5>
+                            <div style="color: #ffc107; font-size: 14px; margin-bottom: 5px;">★★★ (26)</div>
+                            <p class="price">350.000đ</p>
+                            <button class="btn-cart">THÊM GIỎ HÀNG</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../IMG/trai1.png" alt="SP">
+                        <div class="card-body">
+                            <p class="card-text-muted">8-16 tuổi | 100% Bông</p>
+                            <h5 class="card-title">Áo Thun Sọc Ngang</h5>
+                            <div style="color: #ffc107; font-size: 14px; margin-bottom: 5px;">★★★★★ (276)</div>
+                            <p class="price">195.000đ</p>
+                            <button class="btn-cart">THÊM GIỎ HÀNG</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../IMG/trai2.png" alt="SP">
+                        <div class="card-body">
+                            <p class="card-text-muted">2-3 tuổi | 100% Bông</p>
+                            <h5 class="card-title">Áo Thun Logo Corgi</h5>
+                            <div style="color: #ffc107; font-size: 14px; margin-bottom: 5px;">★★★★ (86)</div>
+                            <p class="price">120.000đ</p>
+                            <button class="btn-cart">THÊM GIỎ HÀNG</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../IMG/trai3.png" alt="SP">
+                        <div class="card-body">
+                            <p class="card-text-muted">5-12 tuổi | 100% Bông</p>
+                            <h5 class="card-title">Áo Thun Chữ C Xanh dương</h5>
+                            <div style="color: #ffc107; font-size: 14px; margin-bottom: 5px;">★★★★★ (631)</div>
+                            <p class="price">150.000đ</p>
+                            <button class="btn-cart">THÊM GIỎ HÀNG</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="../IMG/trai4.png" alt="SP">
+                        <div class="card-body">
+                            <p class="card-text-muted">6-10 tuổi | 100% Bông</p>
+                            <h5 class="card-title">Áo Thun Trắng Que Kem</h5>
+                            <div style="color: #ffc107; font-size: 14px; margin-bottom: 5px;">★★★ (36)</div>
+                            <p class="price">205.000đ</p>
+                            <button class="btn-cart">THÊM GIỎ HÀNG</button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+
+    <footer class="footer">
+      <div class="row ms-4">
+        <div class="col-md-4">
+          <h2>PAMI STORE</h2>
+          <p class="small text-light">
+            Chuyên cung cấp quần áo trẻ em chất lượng cao, an toàn cho làn da
+            của bé. Đồng hành cùng sự phát triển của trẻ thơ.
+          </p>
+        </div>
+        <div class="col-2">
+          <h2>Khám Phá</h2>
+          <ul>
+            <li><a href="./about.html">Giới thiệu</a></li>
+            <li><a href="./sitemap.html">Sơ đồ trang</a></li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <h2>Sản Phẩm</h2>
+          <ul>
+            <li><a href="../index.html#betrai">Đồ bé trai</a></li>
+            <li><a href="../index.html#begai">Đồ bé gái</a></li>
+            <li><a href="../index.html#sale">Hàng giảm giá</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h2>Liên Hệ</h2>
+          <p class="small mb-1">Address: 70 Pasteur, TP.HCM</p>
+          <p class="small mb-1">Hotline: 1900 1878</p>
+          <p class="small">Email: contact@pamistore.vn</p>
+        </div>
+      </div>
+      <div
+        class="text-center mt-5 pt-4 border-top border-secondary opacity-50 small"
+      >
+        &copy; 2026 Pami Store Team. All rights reserved.
+      </div>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

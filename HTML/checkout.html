@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="24658021" content="LamQuangPhu">
+  <title>Đặt Hàng - Pami Store</title>
+  <link rel="stylesheet" href="../CSS/bootstrap.min.css" />
+  <script src="../JS/bootstrap.bundle.js"></script>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    .container {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .header {
+      background-color: white;
+      border-radius: 50px;
+      border-bottom: 3px solid #567c8d;
+      padding: 10px 30px;
+      align-items: center;
+      margin: 20px 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      background-color: #567c8d;
+      padding: 8px 18px;
+      border-radius: 20px;
+      transition: 0.3s;
+      font-size: 13px;
+    }
+
+    .menu a:hover {
+      background-color: #2f4156;
+      color: #fff;
+    }
+
+    .checkout {
+      height: 72vh;
+    }
+
+    .checkout h2 {
+      color: #2f4156;
+      border-left: 6px solid #567c8d;
+      padding-left: 15px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .checkout table {
+      margin: 0 auto;
+      margin-top: 50px;
+    }
+
+    .checkout input {
+      height: 40px;
+      width: 300px;
+      margin-right: 20px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 3px solid gray;
+      padding: 10px;
+    }
+
+    .checkout input:focus {
+      border: 3px black solid;
+      background-color: gainsboro;
+    }
+
+    .checkout input:focus::placeholder {
+      color: black;
+    }
+
+    .checkout input::placeholder {
+      font-size: medium;
+    }
+
+    .checkout a {
+      border: 3px gray solid;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp */
+
+    .button {
+      margin-top: 40px;
+    }
+
+    .button a {
+      margin: auto;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      background-color: #567c8d;
+      padding: 8px 18px;
+      border-radius: 20px;
+      transition: 0.3s;
+      font-size: 13px;
+    }
+
+    .button a:hover {
+      background-color: #2f4156;
+    }
+
+    .footer {
+      background-color: #2f4156;
+      color: white;
+      margin-top: 50px;
+      width: 100%;
+      padding: 60px 0 30px;
+    }
+
+    .footer h2 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #fff;
+      border-bottom: 2px solid #567c8d;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .footer ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer a {
+      color: #cbd5e0;
+      text-decoration: none;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .footer a:hover {
+      color: #ff9ff3;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- HEADER -->
+      <div class="header d-flex justify-content-between align-items-center py-2 px-3">
+    
+    <div class="d-flex align-items-center">
+        <img src="../IMG/logo.jpg" alt="Logo" style="width: 70px; border-radius: 50%" />
+        <p class="m-0 ms-2 fw-bold d-none d-lg-block" style="color: #2e5a6e; white-space: nowrap">
+            | Thời trang trẻ em hiện đại
+        </p>
+    </div>
+
+    <div class="menu d-flex align-items-center gap-3">
+        <a href="../index.html" class="text-decoration-none fw-bold px-3">Home</a>
+        <a href="./product-trai.html" class="text-decoration-none fw-bold px-3">Bé trai</a>
+        <a href="./product-gai.html" class="text-decoration-none fw-bold px-3">Bé gái</a>
+        <a href="./product-sale.html" class="text-decoration-none fw-bold px-3">SALE</a>
+    </div>
+
+    <div class="d-flex align-items-center gap-3">
+        <div class="search d-flex">
+            <input type="text" class="form-control" style="border-radius: 30px" placeholder="Bạn muốn tìm gì ?" />
+            <button class="btn btn-outline-secondary ms-1" style="border-radius: 30px">Go</button>
+        </div>
+        
+        <a href="./cart.html">
+            <img src="../IMG/online-shopping.png" alt="gio" style="width: 25px" />
+        </a>
+
+        <a href="./login.html">
+            <img src="../IMG/user.png" alt="user" style="width: 30px; height: 30px; border-radius: 50%;" />
+        </a>
+    </div>
+
+</div>
+
+
+
+    <div class="checkout">
+      <!-- <h1 style="text-align: center;"></h1> -->
+      <h2 class="m-0">Đặt Hàng</h2>
+      <table>
+        <tr>
+          <td>
+            <label for="">Họ Tên</label><br>
+            <input type="text" placeholder="Nhập họ và tên">
+          </td>
+          <td>
+            <label for="">Ngày Sinh</label><br>
+            <input type="date" style="padding: 10px;font-size: large;">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="">Địa Chỉ</label><br>
+            <input type="text" placeholder="Nhập địa chỉ">
+          </td>
+          <td>
+            <label for="">Số Điện Thoại</label><br>
+            <input type="tel" placeholder="Nhập số điện thoại">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="" class="">Email</label><br>
+            <input type="text" placeholder="Nhập địa chỉ email">
+          </td>
+          <td>
+            <label for="">Giới Tính</label><br>
+            <input type="text">
+          </td>
+        <tr>
+          <td colspan="2">
+            <label for="">CCCD</label><br>
+            <input type="number" placeholder="Nhập CCCD" style="width: 97%;">
+          </td>
+        </tr>
+        </tr>
+      </table>
+      <div class="button" style="display: flex;">
+        <a href="">Đặt Hàng</a>
+      </div>
+
+    </div>
+
+
+  </div>
+  <footer class="footer">
+    <div class="row ms-4">
+      <div class="col-md-4">
+        <h2>PAMI STORE</h2>
+        <p class="small text-light">
+          Chuyên cung cấp quần áo trẻ em chất lượng cao, an toàn cho làn da
+          của bé. Đồng hành cùng sự phát triển của trẻ thơ.
+        </p>
+      </div>
+      <div class="col-2">
+        <h2>Khám Phá</h2>
+        <ul>
+          <li><a href="./about.html">Giới thiệu</a></li>
+          <li><a href="./sitemap.html">Sơ đồ trang</a></li>
+        </ul>
+      </div>
+      <div class="col-3">
+        <h2>Sản Phẩm</h2>
+        <ul>
+          <li><a href="../index.html#betrai">Đồ bé trai</a></li>
+          <li><a href="../index.html#begai">Đồ bé gái</a></li>
+          <li><a href="../index.html#sale">Hàng giảm giá</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h2>Liên Hệ</h2>
+        <p class="small mb-1">Address: 70 Pasteur, TP.HCM</p>
+        <p class="small mb-1">Hotline: 1900 1878</p>
+        <p class="small">Email: contact@pamistore.vn</p>
+      </div>
+    </div>
+    <div class="text-center mt-5 pt-4 border-top border-secondary opacity-50 small">
+      &copy; 2026 Pami Store Team. All rights reserved.
+    </div>
+  </footer>
+</body>
+
+</html>

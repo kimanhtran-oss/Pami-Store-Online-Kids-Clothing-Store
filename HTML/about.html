@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="24746521" content="Tran Ly Hoang Duc" />
+    <title>About - Pami Store</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css" />
+    <script src="../JS/bootstrap.bundle.js"></script>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+      }
+
+      .container {
+        width: 90%;
+        margin: auto;
+      }
+
+      .header {
+        background-color: white;
+        border-radius: 50px;
+        border-bottom: 3px solid #567c8d;
+        padding: 10px 30px;
+        align-items: center;
+        margin: 20px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+      }
+      .menu a {
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        background-color: #567c8d;
+        padding: 8px 18px;
+        border-radius: 20px;
+        transition: 0.3s;
+        font-size: 13px;
+      }
+      .menu a:hover {
+        background-color: #2f4156;
+        color: #fff;
+      }
+
+      .about {
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+      }
+
+      .about h2 {
+        color: #2f4156;
+        margin-bottom: 15px;
+      }
+      .about p {
+        font-size: 15px;
+        padding: 0 30px;
+      }
+
+      .team {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+        margin-top: 40px;
+      }
+
+      .member {
+        border: 2px solid #567c8d;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      .member img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
+
+      .footer {
+        background-color: #2f4156;
+        color: white;
+        margin-top: 50px;
+        width: 100%;
+        padding: 60px 0 30px;
+      }
+      .footer h2 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #fff;
+        border-bottom: 2px solid #567c8d;
+        display: inline-block;
+        padding-bottom: 5px;
+      }
+      .footer ul {
+        list-style: none;
+        padding: 0;
+      }
+      .footer a {
+        color: #cbd5e0;
+        text-decoration: none;
+        font-size: 14px;
+        transition: 0.3s;
+      }
+      .footer a:hover {
+        color: #ff9ff3;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div
+        class="header d-flex justify-content-between align-items-center py-2 px-3"
+      >
+        <div class="d-flex align-items-center">
+          <img
+            src="../IMG/logo.jpg"
+            alt="Logo"
+            style="width: 70px; border-radius: 50%"
+          />
+          <p
+            class="m-0 ms-2 fw-bold d-none d-lg-block"
+            style="color: #2e5a6e; white-space: nowrap"
+          >
+            | Thời trang trẻ em hiện đại
+          </p>
+        </div>
+
+        <div class="menu d-flex align-items-center gap-3">
+          <a href="../index.html" class="text-decoration-none fw-bold px-3">Home</a>
+          <a href="./product-trai.html" class="text-decoration-none fw-bold px-3"
+            >Bé trai</a
+          >
+          <a href="./product-gai.html" class="text-decoration-none fw-bold px-3"
+            >Bé gái</a
+          >
+          <a href="./product-sale.html" class="text-decoration-none fw-bold px-3"
+            >SALE</a
+          >
+        </div>
+
+        <div class="d-flex align-items-center gap-3">
+          <div class="search d-flex">
+            <input
+              type="text"
+              class="form-control"
+              style="border-radius: 30px"
+              placeholder="Bạn muốn tìm gì ?"
+            />
+            <button
+              class="btn btn-outline-secondary ms-1"
+              style="border-radius: 30px"
+            >
+              Go
+            </button>
+          </div>
+
+          <a href="./cart.html">
+            <img
+              src="../IMG/online-shopping.png"
+              alt="gio"
+              style="width: 25px"
+            />
+          </a>
+
+          <a href="./login.html">
+            <img
+              src="../IMG/user.png"
+              alt="user"
+              style="width: 30px; height: 30px; border-radius: 50%"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div class="about">
+        <h2>Giới thiệu về PAMI STORE</h2>
+        <hr />
+        <p>
+          PAMI STORE là thương hiệu thời trang trẻ em hiện đại, chuyên cung cấp
+          các sản phẩm chất lượng cao, an toàn và thoải mái dành cho trẻ nhỏ.
+          Với mong muốn mang đến những trải nghiệm tốt nhất cho khách hàng,
+          chúng tôi luôn đặt tiêu chí chất lượng và sự an toàn lên hàng đầu
+          trong từng sản phẩm.
+        </p>
+        <p>
+          Các sản phẩm tại PAMI STORE được lựa chọn kỹ lưỡng từ chất liệu đến
+          thiết kế, đảm bảo phù hợp với làn da nhạy cảm của trẻ em. Chúng tôi ưu
+          tiên sử dụng các loại vải thân thiện với môi trường như cotton tự
+          nhiên, giúp bé luôn cảm thấy dễ chịu khi mặc trong mọi điều kiện thời
+          tiết.
+        </p>
+        <p>
+          Bên cạnh đó, PAMI STORE luôn cập nhật những xu hướng thời trang mới
+          nhất, kết hợp giữa phong cách hiện đại và sự năng động của trẻ nhỏ. Từ
+          trang phục đi học, đi chơi đến các bộ sưu tập theo mùa, tất cả đều
+          được thiết kế nhằm mang lại sự tự tin và thoải mái cho bé.
+        </p>
+        <p>
+          Không chỉ dừng lại ở sản phẩm, PAMI STORE còn chú trọng đến trải
+          nghiệm khách hàng. Chúng tôi cam kết mang đến dịch vụ chăm sóc tận
+          tình, chính sách đổi trả linh hoạt và sự hài lòng cao nhất cho người
+          mua.
+        </p>
+        <p>
+          Trong tương lai, PAMI STORE hướng đến việc phát triển trở thành thương
+          hiệu thời trang trẻ em hàng đầu, không chỉ tại Việt Nam mà còn vươn ra
+          thị trường quốc tế.
+        </p>
+
+        <h2 class="mt-5">Đội ngũ phát triển</h2>
+        <hr />
+        <div class="team">
+          <div class="member">
+            <img src="../IMG/kanh.jpg" />
+            <h4>Trần Thị Kim Anh</h4>
+            <p>Leader</p>
+          </div>
+
+          <div class="member">
+            <img src="../IMG/ducc.jpg" />
+            <h4>Trần Lý Hoàng Đức</h4>
+            <p>Member</p>
+          </div>
+
+          <div class="member">
+            <img src="../IMG/an.jpg"/>
+            <h4>Lương Ngô Gia An</h4>
+            <p>Member</p>
+          </div>
+
+          <div class="member">
+            <img src="../IMG/phu.png"/>
+            <h4>Lâm Quang Phú</h4>
+            <p>Member</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="row ms-4">
+        <div class="col-md-4">
+          <h2>PAMI STORE</h2>
+          <p class="small text-light">
+            Chuyên cung cấp quần áo trẻ em chất lượng cao, an toàn cho làn da
+            của bé. Đồng hành cùng sự phát triển của trẻ thơ.
+          </p>
+        </div>
+        <div class="col-2">
+          <h2>Khám Phá</h2>
+          <ul>
+            <li><a href="./about.html">Giới thiệu</a></li>
+            <li><a href="./sitemap.html">Sơ đồ trang</a></li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <h2>Sản Phẩm</h2>
+          <ul>
+            <li><a href="../index.html#betrai">Đồ bé trai</a></li>
+            <li><a href="../index.html#begai">Đồ bé gái</a></li>
+            <li><a href="../index.html#sale">Hàng giảm giá</a></li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <h2>Liên Hệ</h2>
+          <p class="small mb-1">Address: 70 Pasteur, TP.HCM</p>
+          <p class="small mb-1">Hotline: 1900 1878</p>
+          <p class="small">Email: contact@pamistore.vn</p>
+        </div>
+      </div>
+      <div
+        class="text-center mt-5 pt-4 border-top border-secondary opacity-50 small"
+      >
+        &copy; 2026 Pami Store Team. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>

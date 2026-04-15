@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Áo Thun Pokemon - Pami Store</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="../JS/bootstrap.bundle.js"></script>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-family: "Times New Roman", Times, serif;
+      }
+      .container {
+        margin: 0 auto;
+      }
+      .product-card {
+        background: white;
+        border-radius: 15px;
+        padding: 30px;
+        margin-top: 30px;
+      }
+
+      .price {
+        color: #d9534f;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      .discount-badge {
+        background: #d9534f;
+        color: white;
+        padding: 2px 8px;
+        border-radius: 5px;
+        font-size: 14px;
+        margin-left: 10px;
+      }
+
+      .title-age {
+        border-left: 5px solid #567c8d;
+        padding-left: 10px;
+        color: #2f4156;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+
+      .size-box {
+        display: inline-block;
+        padding: 8px 15px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        margin: 5px;
+        cursor: pointer;
+        min-width: 120px;
+        text-align: center;
+      }
+      .size-box:hover {
+        background-color: #567c8d;
+        border-color: #2f4156;
+      }
+
+      .star-rating {
+        color: #ffc107;
+        font-size: 18px;
+      }
+      .btn-pami {
+        background-color: #567c8d;
+        color: white;
+        padding: 12px;
+        border-radius: 30px;
+        font-weight: bold;
+        border: none;
+        transition: 0.3s;
+      }
+      .btn-pami:hover {
+        background-color: #2f4156;
+        color: white;
+      }
+
+      .header {
+        background-color: white;
+        border-radius: 50px;
+        border-bottom: 3px solid #567c8d;
+        padding: 10px 30px;
+        align-items: center;
+        margin: 20px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+      }
+      .menu a {
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        background-color: #567c8d;
+        padding: 8px 18px;
+        border-radius: 20px;
+        transition: 0.3s;
+        font-size: 13px;
+      }
+      .menu a:hover {
+        background-color: #2f4156;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mb-5">
+      <!-- HEADER -->
+      <div
+        class="header d-flex justify-content-between align-items-center py-2 px-3"
+      >
+        <div class="d-flex align-items-center">
+          <img
+            src="../IMG/logo.jpg"
+            alt="Logo"
+            style="width: 70px; border-radius: 50%"
+          />
+          <p
+            class="m-0 ms-2 fw-bold d-none d-lg-block"
+            style="color: #2e5a6e; white-space: nowrap"
+          >
+            | Thời trang trẻ em hiện đại
+          </p>
+        </div>
+
+        <div class="menu d-flex align-items-center gap-3">
+          <a href="../index.html" class="text-decoration-none fw-bold px-3">Home</a>
+          <a href="./product-trai.html" class="text-decoration-none fw-bold px-3"
+            >Bé trai</a
+          >
+          <a href="./product-gai.html" class="text-decoration-none fw-bold px-3"
+            >Bé gái</a
+          >
+          <a href="./product-sale.html" class="text-decoration-none fw-bold px-3"
+            >SALE</a
+          >
+        </div>
+
+        <div class="d-flex align-items-center gap-3">
+          <div class="search d-flex">
+            <input
+              type="text"
+              class="form-control"
+              style="border-radius: 30px"
+              placeholder="Bạn muốn tìm gì ?"
+            />
+            <button
+              class="btn btn-outline-secondary ms-1"
+              style="border-radius: 30px"
+            >
+              Go
+            </button>
+          </div>
+
+          <a href="./cart.html">
+            <img
+              src="../IMG/online-shopping.png"
+              alt="gio"
+              style="width: 25px"
+            />
+          </a>
+
+          <a href="./login.html">
+            <img
+              src="../IMG/user.png"
+              alt="user"
+              style="width: 30px; height: 30px; border-radius: 50%"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- CHI TIET SAN PHAM -->
+
+      <div class="product-card shadow-sm">
+        <div class="row g-5">
+          <div class="col-md-5 text-center">
+            <img
+              src="../IMG/UT Pokémon Áo Thun.png"
+              class="img-fluid rounded shadow-sm"
+              alt="Pokémon Tee"
+              onerror="
+                this.src = 'https://placehold.co/400x500?text=Sản+Phẩm+Pami'
+              "
+            />
+          </div>
+
+          <div class="col-md-7">
+            <h2 class="fw-bold mb-2">Áo Thun Pokemon</h2>
+
+            <div class="mb-3 d-flex align-items-center">
+              <span class="star-rating">★★★★★</span>
+              <span class="text-muted ms-2">(276 đánh giá)</span>
+              <span class="ms-3 text-muted">| <b>SKU:</b> PAMI-PKM-001</span>
+            </div>
+
+            <span class="price">195.000đ</span>
+
+            <p class="fw-bold mt-2">Mô tả:</p>
+            <ul class="list-unstyled">
+              <li>
+                <b>Hình in sắc nét:</b> Công nghệ in cao cấp, màu sắc sống động,
+                cam kết không bong tróc khi giặt máy.
+              </li>
+              <li>
+                <b>Chất liệu 100% Bông:</b> Vải Cotton tự nhiên mềm mại, thấm
+                hút mồ hôi cực tốt, an toàn cho da bé.
+              </li>
+              <li>
+                <b>Độ bền vượt trội:</b> Vải không xù lông, không dão cổ, giữ
+                form dáng chuẩn sau nhiều lần giặt.
+              </li>
+              <li>
+                <b>Thiết kế năng động:</b> Phù hợp cho bé diện đi học, đi chơi
+                hoặc tham gia các hoạt động ngoại khóa.
+              </li>
+            </ul>
+
+            <div class="mb-4 mt-5">
+              <h5 class="title-age">ĐỘ TUỔI & KÍCH THƯỚC</h5>
+
+              <div class="form-check d-flex flex-wrap">
+                <button class="size-box text-bg-light">
+                  1 - 4 tuổi (12-16kg)
+                </button>
+                <button class="size-box text-bg-light">
+                  5 - 12 tuổi (22-26kg)
+                </button>
+                <button class="size-box text-bg-light">
+                  8 - 16 tuổi (33-40kg)
+                </button>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <button class="btn btn-pami w-100 shadow">
+                THÊM VÀO GIỎ HÀNG
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
